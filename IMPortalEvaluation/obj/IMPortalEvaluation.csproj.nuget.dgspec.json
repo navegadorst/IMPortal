@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AlexSystem\\Developer\\IMPortal\\IMPortalEvaluation\\IMPortalEvaluation.csproj": {}
+    "C:\\AlexSystem\\Developer\\GitReposDev\\IMPortal\\IMPortalEvaluation\\IMPortalEvaluation.csproj": {}
   },
   "projects": {
-    "C:\\AlexSystem\\Developer\\IMPortal\\IMPortalEvaluation\\IMPortalEvaluation.csproj": {
+    "C:\\AlexSystem\\Developer\\GitReposDev\\IMPortal\\IMPortalEvaluation\\IMPortalEvaluation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AlexSystem\\Developer\\IMPortal\\IMPortalEvaluation\\IMPortalEvaluation.csproj",
+        "projectUniqueName": "C:\\AlexSystem\\Developer\\GitReposDev\\IMPortal\\IMPortalEvaluation\\IMPortalEvaluation.csproj",
         "projectName": "IMPortalEvaluation",
-        "projectPath": "C:\\AlexSystem\\Developer\\IMPortal\\IMPortalEvaluation\\IMPortalEvaluation.csproj",
+        "projectPath": "C:\\AlexSystem\\Developer\\GitReposDev\\IMPortal\\IMPortalEvaluation\\IMPortalEvaluation.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\AlexSystem\\Developer\\IMPortal\\IMPortalEvaluation\\obj\\",
+        "outputPath": "C:\\AlexSystem\\Developer\\GitReposDev\\IMPortal\\IMPortalEvaluation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
