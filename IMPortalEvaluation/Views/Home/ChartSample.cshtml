@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewData["Title"] = "ChartSample";
+}
+
+<h2>ChartSample</h2>
+<div id="idsample" class="row" style="visibility:hidden">
+    <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Maec enas id augue ac metu aliquam.</p>
+    <p>Sed pharetra placerat est suscipit sagittis. Phasellus <a href="#">aliquam</a> males uada blandit. Donec adipiscing sem erat.</p>
+</div>
+@*<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+@*<script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>*@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="~/js/html2canvas/html2canvas.min.js"></script>
+<script>
+
+    window.onload = function () {
+          //clicEvento();
+       };
+    function clicEvento() {
+        var formdata = new FormData();
+        formdata.append('parameter', 'sssssss')
+        var t = $('#idsample').html()
+
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("ChartSampleElement","Home")',
+            data: formdata,
+            processData: false,
+            contentType: false,
+            cache: false
+          //dataType: 'json',
+          //success: callback
+        });
+        $.ajax({
+            //async: true,
+            type: 'POST',
+            url: '@Url.Action("ChartSampleElement","Home")',
+            processData: false,
+            contentType: false,
+            data: formdata,
+            success: function (data) {
+                console.log("success")
+            },
+            error: function (request, status, error) {
+                console.log("error")
+            }
+        });
+    }
+        html2canvas(document.querySelector("#idsample"), {
+        onclone: function (clonedDoc) {
+                clonedDoc.getElementById('idsample').style.visibility = 'visible';
+            }
+        }).then((canvas)=>{
+            document.getElementById('idsample').style.visibility = 'hidden'
+        })
+    //document.getElementById('idsample').style.visibility='visible'
+    //html2canvas(document.querySelector("#idsample")).then(canvas => {
+    //    var t = canvas.toDataURL()
+    //    document.getElementById('idsample').style.visibility = 'hidden'
+    //    var formdata = new FormData();
+    //    formdata.append('parameter', t)
+
+       
+    //})
+
+    @*document.getElementById('idsample').style.visibility='visible'
+    var t = $('#idsample').html()
+    var formdata = new FormData();
+    formdata.append('parameter', t)
+
+    $.ajax({
+          type: 'POST',
+        url:  '@Url.Action("ChartSampleElement","Home")',
+        data: formdata,
+        processData: false,
+        contentType: false,
+        cache: false
+          //dataType: 'json',
+          //success: callback
+        });*@
+</script>
+

@@ -46,6 +46,29 @@ namespace IMPortalEvaluation.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        #region markdown
+        //[ActionName("Questions")]
+        public IActionResult LoadQuestion()
+        {
+            return View();
+        }
+
+        #endregion
+
+        #region chart send mail
+
+        public IActionResult ChartSample()
+        {
+            return View();
+        }
+        [HttpPost]
+        public void ChartSampleElement(string parameter)
+        {
+
+            var tempo = string.Empty;
+        }
+        #endregion
         #region methods
         private void readLoadHMTL()
         {
